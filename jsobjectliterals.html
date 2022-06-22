@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Literals</title>
+	</head>
+	<body>
+
+
+
+
+
+		<script type="text/javascript">
+
+			let name = "aung aung";
+			console.log(name);
+			console.log(typeof name);
+			console.table(name);
+			console.error(name);
+			console.warn(name);
+			
+			let obj1 = {
+				firstname : "Tin",
+				middlename : "Htut",
+				lastname : "Aung"
+			};
+
+			console.log(obj1);
+			console.log(typeof obj1);
+			console.table(obj1);
+
+			console.log(obj1.firstname);
+			console.log(obj1.middlename);
+			console.log(obj1.lastname);
+
+			let obj2 = {
+				firstname : "kyaw",
+				lastname : "Gyi",
+				age : 52,
+				married : true,
+				email : "kyawkyaw@gmail.com",
+				phone : "09123456789",
+				address : {
+					street : "Tamwe",
+					city : "Yagon"
+				}
+
+			};
+
+			console.log(obj2);
+			console.table(obj2);
+
+			console.log(obj2.firstname);
+			console.log(obj2.lastname);
+			console.log(obj2.age);
+			console.log(obj2.married);
+			console.log(obj2.email);
+			console.log(obj2.phone);
+			console.log(obj2.address);
+			console.log(obj2.address.street);
+			console.log(obj2.address.city);
+
+			var obj3 = {
+				fullname : "Tin Htut Aung",
+				married : false,
+				age : 25,
+				phone : "09422042242",
+				address : {
+					street : "60st",
+					city : "Mandalay",
+					nation : {
+						burmese : true,
+						chinese : true
+					},
+					skin : "white"
+					},
+					hobbies:["sleep","eat","code","music","sport"],
+
+					getbirthday:function(){
+						return 2000;
+					},
+
+					getbirthdate:function(){
+						// return 2021 - obj3.age; oki
+						return 2021 - this.age;
+					}
+			};
+
+			console.table(obj3);
+			console.log(obj3.fullname);
+			console.log(obj3.address.street);
+			console.log(obj3.address.nation.burmese);
+			console.log(obj3.address.skin);
+
+			console.log(obj3);
+
+			console.log(obj3.hobbies[3]);
+
+			console.log(obj3.getbirthday());
+
+			console.log(obj3.getbirthdate());
+
+
+			let todolist = {
+				add:function(){
+					document.write("Add new work","<br/>");
+				},
+				edit:function(x,y){
+					document.write(`Have to ${x}, ${y} stars`,"<br/>");
+				}
+			}
+
+			console.error(todolist);
+
+			todolist.add();
+
+			todolist.edit("cook",5);
+
+			todolist.edit("eat","5+");
+
+			todolist.edit();
+
+
+
+			todolist.delete = function(){
+				document.write("Delete all notes","<br/>");
+			};
+
+			todolist.delete();
+		</script>
+	</body>
+</html>

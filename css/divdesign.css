@@ -1,0 +1,80 @@
+/*Universal Selector*/
+*{
+	cursor: pointer;
+}
+.firstdiv{
+	width: 200px;
+	height: 200px;
+
+	/*background-color: yellow;*/
+	/*background-color: ;*/
+
+	background-color:rgba(30,45,127,1);
+
+	/*opacity:0.5;*/
+	opacity:1;
+
+	color: red;
+	font-size: 30px;
+
+	cursor: pointer;
+}
+
+.seconddiv{
+	width: 400px;
+	height: 400px;
+	color:white;
+	/*background-color:green;*/
+	font-size: 20px;
+	/*color: white;*/
+
+	/*border: 3px solid red;*/
+
+	border:3px;
+	border-style: solid;
+	border-color: blue;
+
+	background-image:url("../img/bg1.jpg");
+	/*background-repeat:no-repeat;*/
+	background-repeat:repeat;
+	background-repeat:repeat-x
+	/*background-repeat:repeat-y;*/
+	/*background-position:center;*/
+}
+
+.divthree{
+	width: 300px;
+	height: 300px;
+	/*background-color:green;*/
+	color:white;
+	font-size: 30px;
+	/*background:linear-gradient(blue,orange,red,yellow);*/
+
+	/*background-image:linear-gradient(blue,orange,red,yellow);*/
+	/*background:linear-gradient(#ebd834,#34ebcc,#eb34e5);*/
+	/*background:linear-gradient(rgba(127,127,127,1.00),rgba(231,236,127,1.00),rgba(48,228,127,1.00));*/
+	/*background:radial-gradient(blue,orange,red);*/
+	/*background:radial-gradient(#ebd834,#34ebcc,#eb34e5);*/
+	/*background:radial-gradient(rgba(127,127,127,1.00),rgba(231,236,127,1.00),rgba(48,228,127,1.00));*/
+
+	/*background:linear-gradient(
+		45deg,
+		blue,
+		orange
+		);*/
+
+
+		background:linear-gradient(
+			45deg,
+			red 40%,
+			blue 10%
+			);
+}
+
+.divfour{
+	width:200px;
+	height:300px;
+	background-image:linear-gradient(-45deg,rgba(245,239,127,0.5),rgba(243,22,127,0)),url("../img/bg2.jpg");
+
+	background-repeat:no-repeat;
+}

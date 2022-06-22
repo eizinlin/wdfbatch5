@@ -1,0 +1,55 @@
+.div1{
+	width:600px;
+	height:200px;
+	background: orange;
+
+	margin-bottom: 50px;
+}
+
+.div1 .bank{
+	display: block;
+
+	margin-left: 300px;
+	/*position:absolute;*/
+}
+
+.div1 .money{
+	display: block;
+
+	margin-left: 300px;
+	/*position:absolute;*/
+}
+
+.div1 .coin{
+	/*display: block;*/
+
+	margin-left: 500px;
+	position:absolute;
+}
+
+
+
+.div2{
+	width:600px;
+	height:200px;
+	background: yellow;
+
+	position:relative;
+}
+
+.div2 .bank{
+	display: block;
+	margin-left: 300px;
+}
+
+.div2 .money{
+	display: block;
+	margin-left: 300px;
+}
+
+.div2 .coin{
+	/*display: block;*/
+	margin-left: 500px;
+	
+	position:absolute;
+}

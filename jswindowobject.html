@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Windows Object</title>
+
+    <style type="text/css">
+        @media print{
+
+            *{
+                visibility: hidden;
+            }
+
+            #printarea *{
+                visibility: visible;
+            }
+        }
+
+        @page {
+            size: portrait;
+            /* size: landscape; */
+            /* size: auto; */
+            margin: 0;
+        }
+
+
+
+
+    </style>
+</head>
+
+
+    <button onclick="printme()">Print</button>
+    <button onclick="refresh()"> refresh</button>
+
+    <hr/>
+
+    <div id=printarea>
+
+    <div>
+        <h1>This is Paragraph 1</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+    <div>
+        <h1>This is Paragraph 2</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+    </div>
+
+    <div>
+        <h1>This is Paragraph 3</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+
+    <hr/>
+
+    <!-- <div style="margin-top: 1000px;"></div> -->
+
+    <!-- <pre>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</pre> -->
+
+   
+
+
+    <script type="text/javascript">
+        //windows object
+
+        // Alert 
+        // window.alert('Hello World');
+
+        // Prompt 
+        // const input = prompt('Write Something');
+        // console.log(input);
+
+        // Confirm 
+        if(confirm('Are you sure')){
+            console.log("Yes i want to delete");
+        }else{
+            console.log("Ohh sorry i don\'t");
+        }
+
+        // confirm("eizinlinn");
+
+        // Print 
+        // window.print(); 
+
+        function printme(){
+            // console.log('hay'); 
+            window.print();
+        }
+
+        // window.print();
+        
+        let val;
+
+        // Outer width and height
+        // 
+         val = window.outerWidth;
+        console.log("this is outer width = " + val);
+        val = window.outerHeight;
+        console.log("this is outer height = " + val);
+
+        // Inner width and height
+        // 
+        val = window.innerWidth;
+        console.log("this is inner width = " + val);
+        val = window.innerHeight;
+        console.log("this is inner height = " + val);
+
+        // Scroll Points 
+
+        val = window.scrollY;
+        console.log(val);
+
+        val = window.scrollX;
+        console.log(val);
+
+
+        // Redirect
+        // window.location.href = "https://google.com";
+
+        // Reload 
+        // window.location.reload();
+
+        function refresh(){
+            // console.log("hay");
+
+            window.location.reload();
+        }
+
+        // console.log(window.location);
+
+
+        // Navigator Object 
+        // console.log(window.navigator);
+        document.write("navigator.userAgent result = " + window.navigator.userAgent + "<br/>");
+        document.write("navigator.cookieEnabled result = " + window.navigator.cookieEnabled + "<br/>");
+        document.write("navigator.language result = " + window.navigator.language+ "<br/>");
+        document.write("navigator.onLine result = " + window.navigator.onLine + "<br/>");
+
+
+
+
+    </script>
+</body>
+
+</html>

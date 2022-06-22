@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+body{
+	background-image:url("../img/background.jpg");
+	background-repeat:no-repeat;
+}
+
+h1,th,label{
+	color:white;
+}
+
+legend,p{
+	font-family:'Stick', sans-serif;
+	color:yellow;
+	line-height:5px;
+}
+
+p{
+	text-align:right;	
+}
+
+form{
+	width:300px;
+	height:260px;
+	text-align:justify;
+	border:1px dashed white;
+	background-color:rgba(252,255,255,0.1);
+}
+
+fieldset{
+	height:400px;
+}
+
+.register{
+	font-size:17px;
+}
+
+.register:visited{
+	color:yellow;
+}

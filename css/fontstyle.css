@@ -1,0 +1,129 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap'); */
+
+/*Global Font Integrate by Local */
+
+@font-face{
+	font-family:Stick;
+	src:local('Stick-Regular'),url('../libs/fonts/stick/Stick-Regular.ttf') format('woff');
+}
+
+@font-face{
+	font-family:abc;
+	src:local('AkayaTelivigala-Regular'),url('../libs/fonts/akayatelivigala/AkayaTelivigala-Regular.ttf') format('woff');
+}
+/*CDN=Content Deliver Network*/
+/*Global Font Integrate*/
+
+/*body{
+	font-family:Stick,sans-serif;
+}*/
+
+.p1{
+	font-family:abc;
+}
+.p2{
+	font-family:abc;
+}
+.p3{
+	font-family:Stick,sans-serif;
+}
+
+
+ /*Local Font Integrate*/
+ /*LM(local machine)*/
+/*body{*/
+	/*font-family: Century;*/
+	/*font-family:"Time Nwe Roman";*/
+
+/*}*/
+
+ 
+/*.p1{*/
+	/*font-family:Arial;*/
+/*}*/
+/*.p2{*/
+	/*font-family:Century;*/
+/*}*/
+
+/*.p3{*/
+	       		/*first in/first out*/
+	/*font-family:Arial,Century,"Time New Roman";*/
+/*}*/
+
+
+
+/*.p1{*/
+	/*text-transform:uppercase;*/
+	/*text-transform:lowercase;*/
+	/*text-transform:capitalize;*/
+
+	/*font-variant:small-caps;*/
+	/*text-indent:50px;*/
+
+	/*font-style:italic;*/
+	
+	/*font-weight:bold;*/
+			/*100 to 900*/
+	/*font-weight: 600;*/
+/*}*/
+
+
+.a1{
+	text-decoration:none;
+	color:red;
+}
+
+/*pseudo class*/
+.a1:visited{
+	color:green;
+}
+
+.a1:hover{
+	color:blue;
+	font-size:20px;
+}
+
+.menutext{
+	font-family: Arial,Cambral,Century;
+	text-decoration: none;
+	background-color: green;
+	color: white;
+
+	/*padding: 20px;*/
+			/*top&bottom left$right*/
+	/*padding: 10px 30px;*/
+	/*padding: 10px 20px 30px 40px;*/
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	border-radius: 5px;
+
+}
+
+.menutext:hover{
+	color: gold;
+	background-color: blue;
+	font-size:20px;
+	border-radius: 50px;
+
+	transition: 0.5s;
+}
+
+.imgdesign{
+	width: 80px;
+	height: 80px;
+
+	cursor:pointer;
+
+}
+
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+
+	transition: 1s;
+}

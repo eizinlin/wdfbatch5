@@ -1,0 +1,24 @@
+.textalign{
+	text-align:justify;
+}
+
+.textdecoration{
+	/*text-decoration:underline;*/
+	/*text-decoration:line-through;*/
+	text-decoration:overline;
+}
+
+.textline{
+	letter-spacing:3px;
+	/*line-height:30px;*/
+	/*line-height:4;*/
+	line-height:100%;
+}
+
+.textshadow{
+				/*hor  v blur color*/
+				/*h    v b    c*/
+	/*text-shadow:10px 0 3px red;*/
+	/*text-shadow:0 10px 5px red;*/
+	text-shadow:5px -5px 2px red;
+}

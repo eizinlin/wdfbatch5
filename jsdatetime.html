@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date and Time</title>
+	</head>
+	<body>
+
+		<small>Copyright &#x000A9;<span id="year"></span> Eleven Media Group Co., Ltd.All rights reserved.
+
+
+
+
+
+		<script type="text/javascript">
+
+			// Date Time(class method)
+			let date = new Date();
+			console.log(date);
+			console.log(typeof date);
+
+			// let hours = new Date().getHours();
+			let hours = date.getHours();
+			console.log(hours);
+
+			let minutes = date.getMinutes();
+			console.log(minutes);
+
+			let seconds = date.getSeconds();
+			console.log(seconds);
+
+			// 1s = 1000ms
+			// 1 jan 1970 > upnow
+			let gettime = date.getTime();
+			console.warn(gettime);
+			let now = Date.now();
+			console.log(now);
+
+			let getdate = date.getDate();
+			console.error(getdate);
+
+			// jan = 0
+			let getmonth = date.getMonth();
+			console.log(getmonth);
+
+			// sun = 0
+			let getday = date.getDay();
+			console.log(getday);
+
+			let year = date.getFullYear();
+			console.log(year);
+			let utcyear = date.getUTCFullYear();
+			console.log(utcyear);
+			
+
+			document.getElementById("year").textContent = utcyear;
+
+			// month date year // h:m:s
+			let bd = new Date("8-10-2013");
+			bd = new Date('8/10/2013');
+			bd = new Date('Aug 10  2013');
+			bd = new Date('8/10/2013 11:35:00');
+			// bd = new Date('Aug 10 2013 11:30:00');
+			console.log(bd);
+
+			bd.setMonth(8);
+			bd.setDate(20);
+			bd.setFullYear(2021);
+			bd.setHours(12);
+			bd.setMinutes(10);
+			bd.setSeconds(5);
+			console.log(bd);
+
+
+
+
+		</script>
+	</body>
+</html>

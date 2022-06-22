@@ -1,0 +1,47 @@
+.container .circle1{
+	width: 200px;
+	height: 200px;
+	/*background:blue;*/
+	border-radius:100%;
+	background:conic-gradient(
+		yellow,
+		red,
+		green,
+		blue
+		);
+}
+
+.container .circle2{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background:conic-gradient(
+		#34e8eb,
+		#c97dd1,
+		#d7ed45
+		);	
+}
+
+.container .circle3{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background:conic-gradient(
+		rgba(213,161,119,1.00),
+		rgba(94,119,119,1.00),
+		rgba(197,20,119,1.00)
+		);	
+}
+
+.container .circle4{
+	width: 200px;
+	height: 200px;
+	/*background:blue;*/
+	border-radius:100%;
+	background:conic-gradient(
+		red 20%,
+		yellow 0 45%,
+		blue 0 70%,
+		green 0 100%
+		);
+}

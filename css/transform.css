@@ -1,0 +1,152 @@
+/* Variable*/
+:root{
+	--oc: orange;
+	--gn: #0fa616;
+	--bl: rgba(21,14,127,1.00);
+}
+.div1{
+	width: 100px;
+	height: 80px;
+	background-color:var(--gn);
+
+	transform:rotate(50deg);
+}
+
+.div2{
+	width: 200px;
+	height: 80px;
+	background-color: var(--oc);
+	transform:rotate(180deg);
+}
+.div3{
+	width: 200px;
+	height: 80px;
+	background-color: var(--bl);
+	color:#ffff;
+	transform:rotateX(50deg);
+}
+.div4{
+	width: 200px;
+	height: 80px;
+	background-color: var(--gn);
+	transform:rotateY(360deg);
+}
+
+.div5{
+	width: 200px;
+	height: 80px;
+	background-color: var(--bl);
+	transform:rotate(180deg);
+
+	/*transform:scale(0);*/
+	transform:scale(0.5);
+}
+
+.country{
+	font-size:16px;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+
+	padding: 10px 25px 10px 10px;
+
+	background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBIcwU-SN6GwC3Zftx2NldE9ppbMynkrJeVw&usqp=CAU");
+	background-repeat:no-repeat;
+	background-size:15px;
+	background-position:right;
+	background-position-x:90%;
+}
+
+h1{
+	text-align:center;
+	color:blue;
+}
+
+p.text{
+	text-align:center;
+	color:red;
+}
+
+@media(max-width:600px){
+
+	h1{
+		font-size: 25px;
+		color:green;
+	}
+
+	p.text{
+		color:orange;
+	}
+}
+
+.container{
+	width: 300px;
+	height: 300px;
+	/*background:green;*/
+	margin:auto;
+
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+	position:relative;
+}
+
+.c1{
+	width: 300px;
+	height: 300px;
+	background: black;
+	
+	border-radius:50%;
+	z-index:2;
+
+}
+.c2{
+	width: 320px;
+	height: 320px;
+	background: conic-gradient(
+		red 40%,
+		blue 0 75%,
+		yellow 0
+		);
+	
+	border-radius:50%;
+	position:absolute;
+
+	z-index:1;
+}
+
+.pointer-container{
+	width:20px;
+	height: 200px;
+	/*background:grey;*/
+
+	position:absolute;
+	top:-50px;
+	z-index:3;
+
+	animation-name:myani;
+	animation-duration:7s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+
+	transform-origin:bottom;
+}
+
+.pointer{
+	width: 20px;
+	height: 20px;
+	display:block;
+	background-color: red;
+	border-radius:100%;
+
+}
+
+@keyframes myani{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}

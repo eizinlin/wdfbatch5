@@ -1,0 +1,39 @@
+/*Element Selector*/
+/*Single Selector*/
+h1{
+	color:red;
+}
+/*Group Selector*/
+h2,h3,h4{
+	color:red;
+}
+
+/*Id Selector*/
+
+#pray{
+	color:red;
+}
+#myse{
+	color:blue;
+}
+
+#japu{
+	color:blue;
+}
+/*#pray,#japu{
+	color:blue;
+}*/
+
+/*Class selector*/
+
+.redcolor{
+	color:red;
+}
+
+.f20{
+	font-size:20px;
+}
+
+.abc,.efg{
+	color:orange;
+}

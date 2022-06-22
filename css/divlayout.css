@@ -1,0 +1,77 @@
+ /*Variable*/
+ :root{
+ 	--rc:red;
+ 	--gn:green;
+ 	--sil:silver;
+ 	--oc:orange;
+ }
+
+
+
+
+/*.mydiv1{
+	width: 500px;
+	height: 500px;
+	background: orange;
+}*/
+
+
+.mydiv1 .b1{
+	width: 200px;
+	height: 200px;
+	background: var(--gn);
+	color: white;
+	display: block;
+
+	/*margin: 50px;*/
+	/*margin-top: 50px;*/
+	/*margin-bottom: 50px;*/
+	/*margin-left: 50px;*/
+	/*margin-right: 50px;*/
+}
+
+.mydiv1 .b2{
+	width: 200px;
+	height: 200px;
+	background-color: var(--oc);
+	display: block;
+
+		 /*top/bottom left/right*/
+	/*margin: 20px 50px;*/
+}
+
+
+.div1{
+	width:100px;
+	height: 100px;
+	background-color:var(--oc);
+	float: left;
+}
+
+.div2{
+	width: 200px;
+	height: 200px;
+	background-color:var(--rc);
+	float: left;
+}
+
+.div3{
+	width:300px;
+	height: 300px;
+	background-color:var(--gn);
+	float: left;
+}
+
+.div4{
+	width:400px;
+	height: 400px;
+	background-color:var(--oc);
+	float: left;
+}
+
+.div5{
+	width:500px;
+	height: 500px;
+	background-color:var(--rc);
+	float: left;
+}
