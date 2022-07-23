@@ -7,41 +7,41 @@ val = document.body;
 val = document.URL;
 
 val = document.links; //HTMLCOLLECTION
-val = document.links[0];
-val = document.links[3];
-val = document.links[0].id;
-val = document.links[0].className;
-val = document.links[0].classList; // DOMTOKENLIST
-val = document.links[0].classList[1];
-val = document.links[0].classList[0];
+// val = document.links[0];
+// val = document.links[3];
+// val = document.links[0].id;
+// val = document.links[0].className;
+// val = document.links[0].classList; // DOMTOKENLIST
+// val = document.links[0].classList[1];
+// val = document.links[0].classList[0];
 
 val = document.forms; //HTMLCOLLECTION
 val = document.forms[0];
 val = document.forms[0].id;
 val = document.forms[0].className;
-val = document.forms[0].classList;
-val = document.forms[0].classList[0];
-val = document.forms[0].action;
-val = document.forms[0].method;
+// val = document.forms[0].classList;
+// val = document.forms[0].classList[0];
+// val = document.forms[0].action;
+// val = document.forms[0].method;
 
 val = document.images;  //HTMLCOLLECTION
-val = document.images[0];
-val = document.images[0].src;
-val = document.images[0].className;
-val = document.images[0].classList;
-val = document.images[0].classList[0];
-val = document.images[0].alt;
-val = document.images[0].getAttribute("abc");
-val = document.images[0].getAttribute("alt");
+// val = document.images[0];
+// val = document.images[0].src;
+// val = document.images[0].className;
+// val = document.images[0].classList;
+// val = document.images[0].classList[0];
+// val = document.images[0].alt;
+// val = document.images[0].getAttribute("abc");
+// val = document.images[0].getAttribute("alt");
 
 val = document.scripts; //HTMLCOLLECTION
 val = document.scripts[0];
 val = document.scripts[0].src;
-val = document.scripts[0].type;
-val = document.scripts[0].getAttribute('src');
-val = document.scripts[0].getAttribute('type');
+// val = document.scripts[0].type;
+// val = document.scripts[0].getAttribute('src');
+// val = document.scripts[0].getAttribute('type');
 
-// console.log(val);
+console.log(val);
 
 // Change Styling 
 document.getElementById("tasktitle").style.background="grey";
@@ -55,6 +55,8 @@ document.getElementById("tasktitle").style.padding = "5px";
 // document.getElementById("tasktitle").innerText = "My tasks";
 // document.getElementById("tasktitle").innerText = `<span style="color:yellow"> My Jobs</span>`;
 // document.getElementById("tasktitle").innerHTML = `<span style="color:yellow"> My Jobs</span>`;
+
+
 
 
 // Call to class Name 
@@ -88,7 +90,7 @@ console.log(document.querySelector("li"));
 
 const listitems = document.querySelector("ul").getElementsByClassName("list-group-item");
 
-// console.log(listitems);
+console.log(listitems);
 
 // document.querySelector("ul li:nth-child(odd)").style.background = "silver";
 // document.querySelector("ul li:nth-child(even)").style.background = "grey";
@@ -109,11 +111,12 @@ arritems.forEach(function(arritem,index){
 
 
 // querySelectorAll 
+
 let its = document.querySelector("ul.list-group li.list-group-item");
 // console.log(its);
 
 let itms = document.querySelectorAll("ul.list-group li.list-group-item"); //NodeList
-// console.log(itms);
+console.log(itms);
 // console.log(itms[0]);
 
 itms.forEach(function(itm,index){
@@ -158,11 +161,11 @@ console.log(chl);
 
 // children of children 
 
-chl = getul.children[1].children; //HTML Collection
+// chl = getul.children[1].children; //HTML Collection
 chl = getul.children[1].children[0];
 chl = getul.children[1].children[0].id;
-chl = getul.children[1].children[0].className;
-chl = getul.children[1].children[0].classList; //DOM Token List
+// chl = getul.children[1].children[0].className;
+// chl = getul.children[1].children[0].classList; //DOM Token List
 chl = getul.children[1].children[0].href;
 // chl = getul.children[1].children[0].getAttribute("href");
 
@@ -172,7 +175,7 @@ chl = getul.children[0].children[0].children[0];
 
 
 //First Element Child
-chl = getul.lastElementChild;
+chl = getul.firstElementChild;
 
 //Last Element Child
 chl = getul.lastElementChild;
@@ -183,16 +186,16 @@ chl = getul.children.length;
 chl = getul.childElementCount;
 
 chl = getul.children[0].childElementCount;
-chl = getul.children[0].children[0].childElementCount;
+// chl = getul.children[0].children[0].childElementCount;
 
-// console.log(chl);
+console.log(chl);
 
 
-// Parent Elemet 
+// Parent Element 
 
 const getfirstli = document.querySelector("li.list-group-item:first-child");
 
-let = par = getfirstli.parentElement;
+let par = getfirstli.parentElement;
 console.log(par);
 
 
@@ -230,6 +233,7 @@ newli.setAttribute('abc','newitem');
 
 
 // Create Text Node 
+
 newli.appendChild(document.createTextNode('Save Myanmar'));
 
 const newlink= document.createElement("a");
@@ -288,10 +292,10 @@ console.log(getlis[0]);
 // Remove Child Element (child) 
 
 const getfirstul = document.querySelector('ul');
-// console.log(getfirstli);
+// console.log(getfirstul);
 // console.log(getlis[5]);
 
-// getfirstul.removeChild(getlis[0]);
+// getfirstul.removeChild(getlis[0]);s
 // getfirstul.removeChild(getlis[5]);
 
 
@@ -310,11 +314,11 @@ firstlnk = firstlink.className;
 
 // firstlink.className = 'delete-myself';
 // firstlink.className = 'delete-item delete-me ';
-// firstlink.className = "delete-item delete-me delete-myself";
+firstlink.className = "delete-item delete-me delete-myself";
 
 
 firstlnk = firstlink.classList; //DOM Token List
-// console.log(firstlnk);
+console.log(firstlnk);
 // console.log(firstlnk[0]);
 // console.log(firstlnk[1]);
 
@@ -327,11 +331,11 @@ firstlnk = firstlink.classList; //DOM Token List
 // replace(old,new)
 // firstlink.classList.replace('delete-ourserve','delete-delete');
 
-// if(firstlink.classList.contains('delete-me')){
-//     console.log('Yes');
-// }else{
-//     console.log('No');
-// }
+if(firstlink.classList.contains('delete-me')){
+    console.log('Yes');
+}else{
+    console.log('No');
+}
 
 
 // Attribute 
@@ -347,6 +351,8 @@ console.log(getatt); //false
 
 const clearbtn = document.querySelector('.clear-tasks');
 
+// console.log(clearbtn);
+
 // Method 1 
 // clearbtn.addEventListener('click',function(e){
 //     console.log("hay i am working");
@@ -361,36 +367,29 @@ function myclick(e){
     // console.log('hay i am my click');
 
     let val;
-    val = e;
+    // val = e;
 
     // Event target element 
     val = e.target;
     val = e.target.id;
     val = e.target.className;
-    val = e.target.classList; //DON Token List
-
+    // val = e.target.classList; //DON Token List
 
     // e.target.innerText = 'Finished';
 
     // Event type 
 
-    // val = e.type;
+    val = e.type;
 
-    // Coordinates  event - relative to the window
-    // val = e.clientX;
+    // Coordinates event - relative to the window
+    val = e.clientX;
     // val = e.clientY;
 
     // Coordinates  event - relative to the element 
-    // val = e.offsetX;
+    val = e.offsetX;
     // val = e.offsetY;
 
-
-
-    console.log(val);
-
-
-
-
+    // console.log(val);
 
     e.preventDefault();
 }
@@ -402,7 +401,7 @@ const clbtn = document.querySelector('.clear-tasks');
 const card = document.querySelector('.card');
 const heading = document.querySelector('h2');
 
-// console.log(clbtn);
+// console.log(heading);
 
 
 // click 
@@ -448,14 +447,14 @@ const formel = document.querySelector('form');
 // function inputeventtype(e){
 //     console.log(`Event type= ${e.type}`);
 
-    // e.preventDefault();
+//     e.preventDefault();
 // }
 
 const inputtask = document.getElementById('task');
 const geth2 = document.querySelector('h2');
 
 // keydown
-// inputtask.addEventListener('keydown',inputevntype);
+inputtask.addEventListener('keydown',inputevntype); 
 
 // keypress
 // inputtask.addEventListener('keypress',inputevntype);
@@ -478,16 +477,19 @@ const geth2 = document.querySelector('h2');
 // paste 
 // inputtask.addEventListener('paste',inputevntype);
 
+// copy 
+// inputtask.addEventListener('copy',inputevntype);
 
 
-// function inputevntype(e){
-//     console.log(`Event Type = ${e.type}`);
 
-//     console.log(e.target.value);
+function inputevntype(e){
+    console.log(`Event Type = ${e.type}`);
 
-//     geth2.textContent = e.target.value;
+    console.log(e.target.value);
 
-// }
+    geth2.textContent = e.target.value;
+
+}
 
 
 
@@ -540,20 +542,20 @@ function evendelg(e){
     //     console.log('i am delete item by a tag');
     // }
 
-    // if(e.target.parentElement.classList.contains('delete-item')){
-    //     console.log('i am delete item by a tag');
+    if(e.target.parentElement.classList.contains('delete-item')){
+        console.log('i am delete item by a tag');
 
-    //     i  
-    //     e.target.remove();
+        // i  
+        // e.target.remove();
 
-    //       i            a
-    //     e.target.parentElement.remove();
+        //   i            a
+        // e.target.parentElement.remove();
 
-    //         i       a             li 
-    //     e.target.parentElement.parentElement.remove();
+            // i       a             li 
+        // e.target.parentElement.parentElement.remove();
 
         
-    // }
+    }
 
 
 
@@ -590,12 +592,13 @@ document.querySelector('form').addEventListener('submit',function(e){
 });
 
 console.log(JSON.parse(localStorage.getItem('mytasks')));
+// console.log(typeof JSON.parse(localStorage.getItem('mytasks')));
 
-console.log(typeof localStorage.getItem('mytasks'));
+console.log(typeof localStorage.getItem('mytasks'));  //object
 
 let getalltasks = localStorage.getItem('mytasks');
     getalltasks = JSON.parse(getalltasks);
-console.log(getalltasks);
+console.log(getalltasks); 
 
 getalltasks.forEach(function(getalltask){
     console.log(getalltask);

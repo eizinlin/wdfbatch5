@@ -57,6 +57,7 @@ getbtn.addEventListener('click',function(){
 
     }else{
         // Wrong Number 
+
         // Gameover 
         // gameleft--;
         gameleft -= 1;
@@ -154,7 +155,10 @@ getgame.addEventListener('mouseup',(e)=>{
 
 // For Winning Number
 function randomnum(minnum,maxnum){
-    let getrdm = Math.floor(Math.random() * (maxnum-minnum) + 1);
+    let getrdm = Math.floor(Math.random() * (maxnum-minnum+1) + 1);
 
     return getrdm;
 }
+
+console.log(randomnum(min,max));
+

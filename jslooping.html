@@ -11,7 +11,9 @@
 
 
     <script type="text/javascript">
+
         // 1.For Loop
+
         // for(statement 1;statement 2;statement 3){
         //     code to be executed;
         // }
@@ -19,7 +21,7 @@
         // global scope
         let i = 0;
 
-        for (i; i < 10; i++) {
+        for(i; i < 10; i++) {
             console.log(i);
         }
 
@@ -44,14 +46,14 @@
         //     console.warn(j);
         // }
 
-        for(let j=0 ; j<10 ; j++){
-            if(j === 2){
-                console.log("2 is my fav number ");
-                break;
-            }
+        // for(let j=0 ; j<10 ; j++){
+        //     if(j === 2){
+        //         console.log("2 is my fav number ");
+        //         break;
+        //     }
 
-            console.warn(j);
-        }
+        //     console.warn(j);
+        // }
 
         // for(let j=0 ; j<10 ; j++){
         //     if(j === 2){
@@ -238,7 +240,7 @@
 
         let k = 0;
 
-        while (k < mycolors.length) {
+        while(k < mycolors.length) {
             // console.log(k);
             document.write(mycolors[k] + "<br/>");
             k++;
@@ -374,15 +376,20 @@
 
         // console.log(users);
 
-        const getname = users.map(function(user) {
-            return user.name;
-        });
-        console.log(getname);
+        // const getname = users.map(function(user) {
+        //     return user.name;
+        // });
+        // console.log(getname);
 
-        const printname = users.map(user => user.name);
-        console.log(printname);
+        // const printname = users.map(user => user.name);
+        // console.log(printname);
 
-        users.map((user, idx) => {
+        // users.map((user, idx) => {
+        //     document.write(`Index is ${idx} , Id is ${user.id} and name is ${user.name} + ${user} +  <br/>`);
+            
+        // });
+
+        users.forEach((user, idx) => {
             document.write(`Index is ${idx} , Id is ${user.id} and name is ${user.name} + ${user} +  <br/>`);
             
         });
